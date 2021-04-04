@@ -288,6 +288,9 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
+.skills__full{
+  width: 100%;
+}
 .skills__html{
   width: 95%;
 }
