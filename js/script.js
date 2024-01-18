@@ -70,7 +70,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function loadLang(){
     lang = localStorage.getItem('lang-selected');
-    selectLang.value = lang
+    if(lang != null)
+        selectLang.value = lang
+    else{
+        selectLang[0].selectedIndex = 0;
+    }
     changeLanguage(lang)
 }
 
@@ -78,9 +82,8 @@ let typed = undefined;
 
 function changeLanguage(value = '0') {
     let headerTyped = ['Desarrollador FullStack', 'Analista sistemas']
-
     let objLang = {};
-    if(value === '0'){
+    if(value === null || value === '0'){
         objLang = language.esp;
     }else if(value === '1'){
         objLang = language.eng;
