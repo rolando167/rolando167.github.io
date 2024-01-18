@@ -125,6 +125,8 @@ function changeLanguage(value = '0') {
     projectsLast.textContent = objLang.projects.projectLast
     projectTitle.textContent = objLang.projects.projectTitle
 
+    technologyTitle.textContent = objLang.nav.technology
+
     /*==================== typed js ====================*/
     if(typed) {
         typed.destroy();
