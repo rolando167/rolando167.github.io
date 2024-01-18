@@ -146,7 +146,7 @@ function changeLanguage(value = '0') {
 let language = {
     eng: {
         nav: {
-              portfolio : "Portfolio"
+              portfolio : "RH"
             , home : "Home"
             , about : "About"
             , services: "Services"
@@ -189,7 +189,7 @@ let language = {
     },
     esp: {
         nav: {
-              portfolio : "Portafolio"
+              portfolio : "RH"
             , home : "Inicio"
             , about : "Sobre"
             , services: "Servicios"
