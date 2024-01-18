@@ -95,7 +95,7 @@ function changeLanguage(value = '0') {
     navAbout.textContent = objLang.nav.about
     navServices.textContent = objLang.nav.services
     navProjects.textContent = objLang.nav.projects
-    navContact.textContent = objLang.nav.contact
+    navTechnology.textContent = objLang.nav.technology
 
     //header
     headerWelcome.textContent = objLang.header.welcome
@@ -144,13 +144,14 @@ function changeLanguage(value = '0') {
 let language = {
     eng: {
         nav: {
-            portfolio : "Portfolio",
-            home : "Home",
-            about : "About",
-            services: "Services",
-            skills : "Skills",
-            projects : "Projects",
-            contact :"Contact"
+              portfolio : "Portfolio"
+            , home : "Home"
+            , about : "About"
+            , services: "Services"
+            , skills : "Skills"
+            , projects : "Projects"
+            , contact : "Contact"
+            , technology: "Technology"
         },
         header: {
               welcome: "Hi, My name is"
@@ -186,20 +187,21 @@ let language = {
     },
     esp: {
         nav: {
-            portfolio : "Portafolio",
-            home : "Inicio",
-            about : "Sobre",
-            services: "Servicios",
-            skills : "Habilidades",
-            projects : "Proyectos",
-            contact :"Contacto"
+              portfolio : "Portafolio"
+            , home : "Inicio"
+            , about : "Sobre"
+            , services: "Servicios"
+            , skills : "Habilidades"
+            , projects : "Proyectos"
+            , contact :"Contacto"
+            , technology: "Tecnología"
         },
         header: {
-            welcome: "Hola, My nombre es",
-            who: "Soy",
-            typed: ['Desarrollador FullStack', 'Analista sistemas'],
-            message:"Apasionado con mi trabajo en las tecnologías de la información.",
-            downloadCv :"Download CV",
+              welcome: "Hola, My nombre es"
+            , who: "Soy"
+            , typed: ['Desarrollador FullStack', 'Analista sistemas']
+            , message:"Apasionado con mi trabajo en las tecnologías de la información."
+            , downloadCv :"Download CV",
         },
         about : {
               about:"Sobre"
