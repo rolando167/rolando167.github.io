@@ -219,8 +219,8 @@ let language = {
             , serviceDes3:"He Trabajado con bases de datos realacionales como Sql server, Oracle, Mysql y no relaciones como MongoDB."
         },
         projects:{
-              projectLast :"Last"
-            , projectTitle :"Project"
+              projectLast :"Últimos"
+            , projectTitle :"Proyectos"
         },
         copyright :{
             text: "copyright"
