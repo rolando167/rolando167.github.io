@@ -1,216 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Rolando Hidalgo" />
+    <title>💻 Portfolio | Rolando</title>
 
-		<link rel="stylesheet" href="assets/css/styles.css">
-		<link rel="stylesheet" href="assets/lightbox/simple-lightbox.css?v2.4.1" />
-		<!-- =====BOX ICONS===== -->
-		<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- box icons 😄-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-		<title>Portafolio - Rolando. </title>
-	</head>
-	<body>
-		<!--===== HEADER =====-->
-		<header class="l-header">
-			<nav class="nav bd-grid">
-				<div>
-					<a href="#" class="nav__logo">Rolando</a>
-				</div>
+    <!-- in your header -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-				<div class="nav__menu" id="nav-menu">
-					<ul class="nav__list">
-						<li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
-						<li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-						<li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-						<li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
-						<!-- <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li> -->
-					</ul>
-				</div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7HW7MTVS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-				<div class="nav__toggle" id="nav-toggle">
-					<i class='bx bx-menu'></i>
-				</div>
-			</nav>
-		</header>
+      gtag('config', 'G-N7HW7MTVS1');
+    </script>
+  </head>
 
-		<main class="l-main">
-			<!--===== HOME =====-->
-			<section class="home bd-grid" id="home">
-				<div class="home__data">
-					<h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Rolando</span><br> </h1>
+  <body>
+    <!-- header design 🅰️-->
+    <header class="header">
+      <a href="#" class="logo" id="navPortfolio">RH</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-					<a href="#footer" class="button">Contacto</a>
-				</div>
+      <nav class="navbar">
+        <a href="#home" class="active" id="navHome">Inicio</a>
+        <a href="#about" id="navAbout">Sobre</a>
+        <a href="#services" id="navServices">Servicios</a>
+        <a href="#portfolio" id="navProjects">Proyectos</a>
+        <a href="#technology" id="navTechnology">Tecnologias</a>
+        <select id="select-lang" class="custom-select" >
+          <option value="0" >&nbsp; 🇪🇸 Spanish --</option>
+          <option value="1">&nbsp; 🇬🇧 English --</option>
+        </select>
+      </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div id="particles-js" ></div>
+      <div class="home-content">
+        <h3 id="headerWelcome">Hola, me llamo</h3>
+        <h1>Rolando Hidalgo </h1>
+        <h3><span id="headerWho">Soy</span> <span class="multiple-text"></span></h3>
+        <p id="headerMessage">Apasionado con mi trabajo en las tecnologías de la información.</p>
+        <div class="social-media">
+          <a href="https://api.whatsapp.com/send?phone=34611771065" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp' ></i></a>
+          <a href="mailto:rolando167@hotmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>  
 
-				<div class="home__social">
-					<a href="https://pe.linkedin.com/in/rolando-edmundo-hidalgo-renteria-74239a92" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-					<!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-					<a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
-				</div>
+          <a href="https://www.instagram.com/rolandhr26/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://www.linkedin.com/in/rolando-hidalgo-renteria-74239a92/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a  href="https://drive.google.com/file/d/14hJqleTiehnGh-5s9WmHPJtjEtT-SaH9/view?usp=sharing" 
+        target="_blank" rel="noopener" class="btn" id="headerdownloadCv">Descargar CV</a>
+      </div>
 
-				<div class="home__img">    
-					<img src="assets/img/perfil.png" alt="">
-				</div>
-			</section>
+      <div class="home-img">
+        <img src="images/home.png" alt="home" class="border-15">
+      </div>
+    </section>
 
-			<!--===== ABOUT =====-->
-			<section class="about section " id="about">
-				<h2 class="section-title">Sobre</h2>
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about img border-15 border-color1" >
+        <img src="images/about.png" alt="about" class="border-15 border-color2">
+      </div>
+      <div class="about-content">
+        <h2 class="heading"><span id="aboutName">About</span> <span id="aboutme">Mi</span></h2>
+        <!-- <h3>Desarrollador software</h3> -->
+        <p id="aboutparagraph1">Desarrollador de software con mas de 5 años de experiencia, con lenguajes de programación en Java, Php, Javascript, C# entres otros. y Análisis de los requerimientos y necesidades de los clientes
+        </p>
+        <p id="aboutparagraph2">
+          Desplegando microservicios en springboot, Laravel, angular y con tecnologias del del desarrollo del software.
+        </p>
+        <p id="aboutparagraph3">
+        </p>
+        <a href="#portfolio" class="btn" id="aboutbtn">Proyectos ↓</a>
+      </div>
+    </section>
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading"> <span id="servicesName">Servicios</span>!!</h2>
 
-				<div class="about__container bd-grid">
-					<div class="about__img">
-						<img src="assets/img/about.png" alt="">
-					</div>
-					
-					<div>
-						<h2 class="about__subtitle">Soy Rolando</h2>
-						<p class="about__text">Bachiller en Ingeniería de sistemas, he laborado en mas de 3 años como analista de sistemas y programador web, desarrollando y creando soluciones a procesos no automatizados.</p>
-						<p class="about__text"></p>           
-					</div>                                   
-				</div>
-			</section>
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bxs-edit-alt'></i>
+          <h3 id="service1">Requerimientos</h3>
+          <p id="serviceDes1">Análisis de requerimientos y metodologías de software, y control de tiempo.</p>
+        </div>
 
-			<!--===== SKILLS =====-->
-			<section class="skills section" id="skills">
-				<h2 class="section-title">Habilidades</h2>
+        <div class="services-box">
+          <i class='bx bxs-factory'></i>
+          <h3 id="service2">Desarrollo software</h3>
+          <p id="serviceDes2">Crear y desarrollar nuevas funcionalidades sofware en los lenguajes requeridos y con pruebas de calidad.</p>
+        </div>
 
-				<div class="skills__container bd-grid">          
-					<div>
-						<h2 class="skills__subtitle">Habilidades Profesionales</h2>
-						<p class="skills__text">Cada Fase del ciclo del software, promuebe el uso de distintas herramientas.</p>
-						<div class="skills__data">
-							<div class="skills__names">
-								<i class='bx bx-check skills__icon'></i>
-								<span class="skills__name">Análisis y Diseño</span>
-							</div>
-							<div class="skills__bar skills__full">
+        <div class="services-box">
+          <i class='bx bxs-data'></i>
+          <h3 id="service3">base de datos</h3>
+          <p id="serviceDes3">He Trabajado con bases de datos realacionales como Sql server, Oracle, Mysql y no relaciones como MongoDB.</p>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"><span id="projectsLast">Últimos</span> <span id="projectTitle">Proyectos</span></h2>
 
-							</div>
-							<div>
-								<!-- <span class="skills__percentage">100%</span> -->
-							</div>
-						</div>
-						<div class="skills__data">
-							<div class="skills__names">
-								<i class='bx bx-check skills__icon'></i>
-								<span class="skills__name">Base de datos</span>
-							</div>
-							<div class="skills__bar skills__full">
-								
-							</div>
-							<div>
-								<!-- <span class="skills__percentage">100%</span> -->
-							</div>
-						</div>
-						<div class="skills__data">
-							<div class="skills__names">
-								<i class='bx bx-check skills__icon' ></i>
-								<span class="skills__name">Desarrollo Backend</span>
-							</div>
-							<div class="skills__bar skills__full">
-								
-							</div>
-							<div>
-								<!-- <span class="skills__percentage">100%</span> -->
-							</div>
-						</div>
-						<div class="skills__data">
-							<div class="skills__names">
-								<i class='bx bx-check skills__icon'></i>
-								<span class="skills__name">Desarrollo Front End</span>
-							</div>
-							<div class="skills__bar skills__full">
-								
-							</div>
-							<div>
-								<!-- <span class="skills__percentage">100%</span> -->
-							</div>
-						</div>
-					</div>
-					
-					<div>              
-						<img src="assets/img/work3.jpg" alt="" class="skills__img">
-					</div>
-				</div>
-			</section>
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img src="images/portfolio1.jpg" alt="Portfolio 1">
+            <div class="portfolio-layer">
+              <h4>web design</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quod?</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-			<!--===== WORK =====-->
-			<section class="work section" id="work">
-				<h2 class="section-title">Proyectos</h2>
+          <div class="portfolio-box">
+            <img src="images/portfolio2.jpg" alt="Portfolio 2">
+            <div class="portfolio-layer">
+              <h4>web design</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quod?</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-			 
-				<div class="container">
-				    <div class="gallery">
-				    	<div class="work__container bd-grid">
-							<div class="work__img">
-								<a href="assets/img/work1.jpg" class="big"><img src="assets/img/work1.jpg" alt="" title="Higorr" /></a>   
-							</div>
-							<div class="work__img">
-								<a href="assets/img/work2.jpg" class="big"><img src="assets/img/work2.jpg" alt="" title="" /></a>  
-							</div>
-							<div class="work__img">
-								<a href="assets/img/work3.jpg" class="big"><img src="assets/img/work3.jpg" alt="" title="" /></a>  
-							</div>
-							<div class="work__img">
-								<a href="assets/img/work4.jpg" class="big"><img src="assets/img/work4.jpg" alt="" title="" /></a>  
-							</div>
-							<div class="work__img">
-								<a href="assets/img/work5.jpg" class="big"><img src="assets/img/work5.jpg" alt="" title="" /></a>  
-							</div>
-							<div class="work__img">
-								<a href="assets/img/work6.jpg" class="big"><img src="assets/img/work6.jpg" alt="" title="" /></a>  
-							</div>
-						</div>
-				    </div>
-				</div>
-			</section>
+          <div class="portfolio-box">
+            <img src="images/portfolio3.jpg" alt="Portfolio 3">
+            <div class="portfolio-layer">
+              <h4>web design</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quod?</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-			<!--===== CONTACT =====-->
-			<section class="contact section" id="contact" style="display: none;">
-				<h2 class="section-title">Contacto</h2>
+          <div class="portfolio-box">
+            <img src="images/portfolio4.jpg" alt="Portfolio 4">
+            <div class="portfolio-layer">
+              <h4>web design</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quod?</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-				<div class="contact__container bd-grid">
-					<form action="" class="contact__form">
-						<input type="text" placeholder="Name" class="contact__input">
-						<input type="mail" placeholder="Email" class="contact__input">
-						<textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-						<input type="button" value="Enviar" class="contact__button button">
-					</form>
-				</div>
-			</section>
-		</main>
+          <div class="portfolio-box">
+            <img src="images/portfolio5.jpg" alt="Portfolio 5">
+            <div class="portfolio-layer">
+              <h4>Desarrollo web</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, quod?</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-		<!--===== FOOTER =====-->
-		<footer class="footer" id="footer">
-			<p class="footer__title">Rolando Hidalgo Renteria</p>
-			<div class="footer__social">
-				<a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-				<a href="https://www.instagram.com/hidalgorenteria/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-				<a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-			</div>
-			<p>&#169; 2021 copyright all right reserved</p>
-		</footer>
+          <div class="portfolio-box">
+            <img src="images/portfolio6.jpg" alt="Portfolio 6">
+            <div class="portfolio-layer">
+              <h4>Desarrollo web</h4>
+              <p>Sistema de personas registradas, funcionalidad de buesqueda</p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- contact section design -->
+
+    <section class="contact" id="technology">
+      <h2 class="heading" id="technologyTitle">Tecnologías<span>!</span></h2>
+      <div class="technology-container">
+        <div class="services-box">
+          <i class="devicon-java-plain-wordmark colored"></i>
+          <i class="devicon-csharp-plain colored"></i>
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
+        <div class="services-box">
+          <i class="devicon-angularjs-plain colored"></i>
+          <i class="devicon-react-original-wordmark colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+        </div>
+        <div class="services-box">
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-laravel-plain-wordmark"></i>
+          <i class="devicon-spring-plain-wordmark colored"></i>
+          <i class="devicon-mongodb-plain-wordmark colored"></i>
+          <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+          <i class="devicon-oracle-original colored"></i>
+          <i class="devicon-postgresql-plain-wordmark colored"></i>
+        </div>
+        <div class="services-box">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-docker-plain-wordmark colored"></i>
+          <i class="devicon-gitlab-plain-wordmark colored"></i>
+          <i class="devicon-vscode-plain-wordmark colored"></i>
+          <i class="devicon-github-original-wordmark colored"></i>
+          <i class="devicon-jira-plain-wordmark colored"></i>
+        </div>
+      </div>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>2024 | &copy; copyright all right reserved</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Import JS: reveal Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Import JS: Particles Theme -->
+    <script src="js/particles.js-master/particles.js"></script>
+    <script src="js/particles.js-master/app.js"></script>
+
+    <!-- Import JS: Main Script -->
+    <script src="js/script.js"></script>
 
 
-		<!--===== SCROLL REVEAL =====-->
-		<script src="https://unpkg.com/scrollreveal"></script>
- 
-		<script src="assets/lightbox/simple-lightbox.js?v2.4.1"></script>
 
-
-		<!--===== MAIN JS =====-->
-		<script src="assets/js/main.js"></script>
-
-		<script>
-		    (function() {
-		        var $gallery = new SimpleLightbox('.gallery a', {});
-		    })();
-		</script>
-	</body>
+  </body>
 </html>
-
-<!-- Referencias  -->
-<!-- 1. https://boxicons.com/ -->
-<!-- 2. https://scrollrevealjs.org/guide/hello-world.html -->
